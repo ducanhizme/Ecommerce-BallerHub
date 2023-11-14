@@ -8,14 +8,15 @@
 </head>
 <body>
 	<header class="header">
+	<div class="header__wrapper">
 		<div class="header__button linear-horizontal">
 			<p class="fs-s bold">BallerHub</p>
 			<button class="icon-button-border">
 				<i class="fa-solid fa-bars fa-xl"><a href="/"></a></i>
 			</button>
 		</div>
-		<div class="header__toggle-menu">
-			<ul class="header__menu linear-vertical gap-2">
+		<div class="header__toggle-menu" data-visible="false">
+			<ul class="header__menu linear-vertical">
 				<li class="header__menu--item">
 					<a href="#">Products</a>
 				</li>
@@ -32,7 +33,23 @@
 				<button class="primary-button">Search</button>
 			</div>
 		</div>
-	</header>
-	<script src="https://kit.fontawesome.com/9fc1e53533.js" crossorigin="anonymous"></script>
+	</div>
+</header>
+	<main>
+		<section class="banner linear gap-2">
+			<div class="banner__button-tittle-group linear-vertical gap-1">
+				<p class="fs-l extra-bold banner__tittle">ORIGINALITY YOU WEAR EVERYDAY</p>
+				<div class="banner__button-group linear-horizontal gap-1">
+					<button type="button" class="primary-button">Shop Now</button>
+					<button type="button" class="secondary-button">Flash Sale</button>
+				</div>
+			</div>
+			<img class="" src="img/banner_element3.png" alt="banner-element-3" srcset="img/banner_element3.png">
+			<img class="" src="img/banner_element1.png" alt="banner-element-3" srcset="img/banner_element1.png">
+			<img class="" src="img/banner_element2.png" alt="banner-element-3" srcset="img/banner_element2.png">
+		</section>
+	</main>
+<script src="https://kit.fontawesome.com/9fc1e53533.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
 </body>
 </html>
