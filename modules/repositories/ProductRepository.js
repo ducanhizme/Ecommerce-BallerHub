@@ -1,4 +1,6 @@
-class ProductRepository {
+import {Datasource} from "../data-source/Datasource.js";
+
+export class ProductRepository {
     constructor() {
         this.products =[]
         this.data = new Datasource().getProducts();

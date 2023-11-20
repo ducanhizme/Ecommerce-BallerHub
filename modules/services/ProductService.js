@@ -1,4 +1,6 @@
-class ProductService {
+import {ProductRepository} from "../repositories/ProductRepository.js";
+
+export class ProductService {
     constructor() {
         this.productRepository = new ProductRepository();
     }

@@ -1,7 +1,8 @@
-// import "data/data-source/Datasource.js"
-// import "data/entities/Product.js"
-// import "data/repositories/ProductRepository.js"
-// import "data/services/ProductService.js"
+import {Product} from "../../modules/entities/Product.js";
+import {ProductRepository} from "../../modules/repositories/ProductRepository.js";
+import {Datasource} from "../../modules/data-source/Datasource.js";
+import {ProductService} from "../../modules/services/ProductService.js";
+
 const navToggle =  document.querySelector(".header__button")
 const navIconToggle = document.querySelector(".icon-button-border i")
 const navMenuHeader = document.querySelector(".header__toggle-menu")
@@ -43,13 +44,4 @@ var swiper = new Swiper(".product-list", {
 });
 
 
-const products=[]
-for (let i = 2; i <= 16; i++) {
-    const product = new Product(i, `Product${i}`, `../img/banner_element${i}.png`, 100.00 * i, `Description${i}`, ["XS", "S", "L", "XL", "XXL"], []);
-    products.push(product);
-}
-const dataSource = new Datasource()
-dataSource.setProducts(products);
 
-const productService = new ProductService();
-console.log("Service",productService.getAll())

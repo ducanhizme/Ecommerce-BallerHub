@@ -1,3 +1,0 @@
-const TAG ={
-    "DEFAULT":"all",
-}
